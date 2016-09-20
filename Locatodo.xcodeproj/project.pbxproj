@@ -16,6 +16,8 @@
 		F5F903541D916B5900B7C238 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F903531D916B5900B7C238 /* Logger.swift */; };
 		F5F903561D916BB500B7C238 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F903551D916BB500B7C238 /* Identifiable.swift */; };
 		F5FA482E1D916FFA00837672 /* Convertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA482D1D916FFA00837672 /* Convertible.swift */; };
+		F5FA48321D91712100837672 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA48311D91712100837672 /* Model.swift */; };
+		F5FA48341D9171BF00837672 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA48331D9171BF00837672 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F5F903531D916B5900B7C238 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F5F903551D916BB500B7C238 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		F5FA482D1D916FFA00837672 /* Convertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convertible.swift; sourceTree = "<group>"; };
+		F5FA48311D91712100837672 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F5FA48331D9171BF00837672 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				F5F903531D916B5900B7C238 /* Logger.swift */,
 				F5F903551D916BB500B7C238 /* Identifiable.swift */,
 				F5FA482D1D916FFA00837672 /* Convertible.swift */,
+				F5FA48311D91712100837672 /* Model.swift */,
+				F5FA48331D9171BF00837672 /* Task.swift */,
 				F5F903451D91695B00B7C238 /* Main.storyboard */,
 				F5F903481D91695B00B7C238 /* Assets.xcassets */,
 				F5F9034A1D91695B00B7C238 /* LaunchScreen.storyboard */,
@@ -224,7 +230,9 @@
 				F5F903441D91695B00B7C238 /* ViewController.swift in Sources */,
 				F5F903561D916BB500B7C238 /* Identifiable.swift in Sources */,
 				F5F903541D916B5900B7C238 /* Logger.swift in Sources */,
+				F5FA48321D91712100837672 /* Model.swift in Sources */,
 				F5FA482E1D916FFA00837672 /* Convertible.swift in Sources */,
+				F5FA48341D9171BF00837672 /* Task.swift in Sources */,
 				F5F903421D91695B00B7C238 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
