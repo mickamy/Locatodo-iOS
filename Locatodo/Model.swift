@@ -68,3 +68,13 @@ extension ModelBuilder where ModelType.ID == String {
     }
     
 }
+
+struct ModelField {
+    
+    static let id: String = "id"
+    
+    static let createdAt: String = "createdAt"
+    
+    static let updatedAt: String = "updatedAt"
+    
+}

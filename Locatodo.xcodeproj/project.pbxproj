@@ -18,6 +18,7 @@
 		F5FA482E1D916FFA00837672 /* Convertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA482D1D916FFA00837672 /* Convertible.swift */; };
 		F5FA48321D91712100837672 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA48311D91712100837672 /* Model.swift */; };
 		F5FA48341D9171BF00837672 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA48331D9171BF00837672 /* Task.swift */; };
+		F5FA48361D91780900837672 /* RealmTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA48351D91780900837672 /* RealmTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F5FA482D1D916FFA00837672 /* Convertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convertible.swift; sourceTree = "<group>"; };
 		F5FA48311D91712100837672 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F5FA48331D9171BF00837672 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		F5FA48351D91780900837672 /* RealmTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				F5F903551D916BB500B7C238 /* Identifiable.swift */,
 				F5FA482D1D916FFA00837672 /* Convertible.swift */,
 				F5FA48311D91712100837672 /* Model.swift */,
+				F5FA48351D91780900837672 /* RealmTask.swift */,
 				F5FA48331D9171BF00837672 /* Task.swift */,
 				F5F903451D91695B00B7C238 /* Main.storyboard */,
 				F5F903481D91695B00B7C238 /* Assets.xcassets */,
@@ -233,6 +236,7 @@
 				F5FA48321D91712100837672 /* Model.swift in Sources */,
 				F5FA482E1D916FFA00837672 /* Convertible.swift in Sources */,
 				F5FA48341D9171BF00837672 /* Task.swift in Sources */,
+				F5FA48361D91780900837672 /* RealmTask.swift in Sources */,
 				F5F903421D91695B00B7C238 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
