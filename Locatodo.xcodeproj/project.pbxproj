@@ -15,6 +15,7 @@
 		F5F9034C1D91695B00B7C238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F9034A1D91695B00B7C238 /* LaunchScreen.storyboard */; };
 		F5F903541D916B5900B7C238 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F903531D916B5900B7C238 /* Logger.swift */; };
 		F5F903561D916BB500B7C238 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F903551D916BB500B7C238 /* Identifiable.swift */; };
+		F5FA482E1D916FFA00837672 /* Convertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA482D1D916FFA00837672 /* Convertible.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F5F9034D1D91695B00B7C238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5F903531D916B5900B7C238 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F5F903551D916BB500B7C238 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		F5FA482D1D916FFA00837672 /* Convertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convertible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				F5F903431D91695B00B7C238 /* ViewController.swift */,
 				F5F903531D916B5900B7C238 /* Logger.swift */,
 				F5F903551D916BB500B7C238 /* Identifiable.swift */,
+				F5FA482D1D916FFA00837672 /* Convertible.swift */,
 				F5F903451D91695B00B7C238 /* Main.storyboard */,
 				F5F903481D91695B00B7C238 /* Assets.xcassets */,
 				F5F9034A1D91695B00B7C238 /* LaunchScreen.storyboard */,
@@ -221,6 +224,7 @@
 				F5F903441D91695B00B7C238 /* ViewController.swift in Sources */,
 				F5F903561D916BB500B7C238 /* Identifiable.swift in Sources */,
 				F5F903541D916B5900B7C238 /* Logger.swift in Sources */,
+				F5FA482E1D916FFA00837672 /* Convertible.swift in Sources */,
 				F5F903421D91695B00B7C238 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
