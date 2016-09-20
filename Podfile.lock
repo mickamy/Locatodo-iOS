@@ -1,0 +1,62 @@
+PODS:
+  - R.swift (3.0.0):
+    - R.swift.Library (~> 3.0.0)
+  - R.swift.Library (3.0.0)
+  - Realm (1.1.0):
+    - Realm/Headers (= 1.1.0)
+  - Realm/Headers (1.1.0)
+  - RealmSwift (1.1.0):
+    - Realm (= 1.1.0)
+  - RxCocoa (3.0.0-beta.1):
+    - RxSwift (~> 3.0.0-beta.1)
+  - RxSwift (3.0.0-beta.1)
+  - XCGLogger (4.0.0-beta.5):
+    - XCGLogger/Core (= 4.0.0-beta.5)
+  - XCGLogger/Core (4.0.0-beta.5)
+
+DEPENDENCIES:
+  - R.swift (~> 3.0.0)
+  - Realm (from `https://github.com/realm/realm-cocoa.git`)
+  - RealmSwift (from `https://github.com/realm/realm-cocoa.git`)
+  - RxCocoa (~> 3.0.0-beta.1)
+  - RxSwift (~> 3.0.0-beta.1)
+  - XCGLogger (from `https://github.com/DaveWoodCom/XCGLogger`, branch `swift_3.0`)
+
+EXTERNAL SOURCES:
+  Realm:
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  RealmSwift:
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  XCGLogger:
+    :branch: swift_3.0
+    :git: https://github.com/DaveWoodCom/XCGLogger
+    :submodules: true
+
+CHECKOUT OPTIONS:
+  Realm:
+    :commit: 3d69adaaaadc185ea35e32727852f541923145ca
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  RealmSwift:
+    :commit: 3d69adaaaadc185ea35e32727852f541923145ca
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  XCGLogger:
+    :commit: ecee85d6343bbfc653e5a313ca863dc3f6161bfa
+    :git: https://github.com/DaveWoodCom/XCGLogger
+    :submodules: true
+
+SPEC CHECKSUMS:
+  R.swift: 5a8b4a4ea565b0f20c39d8ce1445f3d3a9064768
+  R.swift.Library: fed723da260519abed60044de7aaf19494cc4e1f
+  Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
+  RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
+  RxCocoa: 8cecf331302b8ae5381bbab1bccba4ede2eae6a8
+  RxSwift: 0823e8d7969c23bfa9ddfb2afa4881e424a1a710
+  XCGLogger: 27634666573071fcfacbf8c20f84285363fa7d4a
+
+PODFILE CHECKSUM: 1558a645db33337a6c08765330c0316478984868
+
+COCOAPODS: 1.0.1
