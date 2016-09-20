@@ -92,18 +92,58 @@
 			children = (
 				F5F903411D91695B00B7C238 /* AppDelegate.swift */,
 				F5F903431D91695B00B7C238 /* ViewController.swift */,
-				F5F903531D916B5900B7C238 /* Logger.swift */,
-				F5F903551D916BB500B7C238 /* Identifiable.swift */,
-				F5FA482D1D916FFA00837672 /* Convertible.swift */,
-				F5FA48311D91712100837672 /* Model.swift */,
-				F5FA48351D91780900837672 /* RealmTask.swift */,
-				F5FA48331D9171BF00837672 /* Task.swift */,
+				F5FA483B1D917A6800837672 /* Data */,
+				F5FA483D1D917A9600837672 /* Util */,
 				F5F903451D91695B00B7C238 /* Main.storyboard */,
 				F5F903481D91695B00B7C238 /* Assets.xcassets */,
 				F5F9034A1D91695B00B7C238 /* LaunchScreen.storyboard */,
 				F5F9034D1D91695B00B7C238 /* Info.plist */,
 			);
 			path = Locatodo;
+			sourceTree = "<group>";
+		};
+		F5FA48391D917A2600837672 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				F5F903551D916BB500B7C238 /* Identifiable.swift */,
+				F5FA482D1D916FFA00837672 /* Convertible.swift */,
+				F5FA48311D91712100837672 /* Model.swift */,
+			);
+			name = Type;
+			sourceTree = "<group>";
+		};
+		F5FA483A1D917A3E00837672 /* RealmObject */ = {
+			isa = PBXGroup;
+			children = (
+				F5FA48351D91780900837672 /* RealmTask.swift */,
+			);
+			name = RealmObject;
+			sourceTree = "<group>";
+		};
+		F5FA483B1D917A6800837672 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F5FA483C1D917A7B00837672 /* Entity */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		F5FA483C1D917A7B00837672 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F5FA48331D9171BF00837672 /* Task.swift */,
+				F5FA48391D917A2600837672 /* Type */,
+				F5FA483A1D917A3E00837672 /* RealmObject */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		F5FA483D1D917A9600837672 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F5F903531D916B5900B7C238 /* Logger.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
