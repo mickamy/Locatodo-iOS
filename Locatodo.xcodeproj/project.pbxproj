@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5A7DDAC06D9658D9A8A74A6A /* Pods_Locatodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B574631B91C45FA7A93AAD8 /* Pods_Locatodo.framework */; };
+		F5B972B61D92BA5C00610E59 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972B51D92BA5C00610E59 /* TaskRepository.swift */; };
+		F5B972B81D92BA9000610E59 /* TaskDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972B71D92BA9000610E59 /* TaskDataStore.swift */; };
 		F5F903421D91695B00B7C238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F903411D91695B00B7C238 /* AppDelegate.swift */; };
 		F5F903441D91695B00B7C238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F903431D91695B00B7C238 /* ViewController.swift */; };
 		F5F903471D91695B00B7C238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F903451D91695B00B7C238 /* Main.storyboard */; };
@@ -22,12 +24,15 @@
 		F5FA483F1D917AFE00837672 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA483E1D917AFE00837672 /* DataStore.swift */; };
 		F5FA48411D917C3F00837672 /* CRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA48401D917C3F00837672 /* CRUD.swift */; };
 		F5FA48431D917C9A00837672 /* RealmDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA48421D917C9A00837672 /* RealmDataStore.swift */; };
+		F5FA48451D92AC8200837672 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA48441D92AC8200837672 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		407373D6F3361FEBBFF04827 /* Pods-Locatodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locatodo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Locatodo/Pods-Locatodo.debug.xcconfig"; sourceTree = "<group>"; };
 		7B574631B91C45FA7A93AAD8 /* Pods_Locatodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Locatodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05A2D5535642BC74FC6A6A6 /* Pods-Locatodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locatodo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Locatodo/Pods-Locatodo.release.xcconfig"; sourceTree = "<group>"; };
+		F5B972B51D92BA5C00610E59 /* TaskRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		F5B972B71D92BA9000610E59 /* TaskDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDataStore.swift; sourceTree = "<group>"; };
 		F5F9033E1D91695B00B7C238 /* Locatodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locatodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F903411D91695B00B7C238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5F903431D91695B00B7C238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		F5FA483E1D917AFE00837672 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		F5FA48401D917C3F00837672 /* CRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRUD.swift; sourceTree = "<group>"; };
 		F5FA48421D917C9A00837672 /* RealmDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDataStore.swift; sourceTree = "<group>"; };
+		F5FA48441D92AC8200837672 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,27 @@
 				7B574631B91C45FA7A93AAD8 /* Pods_Locatodo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5B972B31D92BA3400610E59 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				F5B972B41D92BA4700610E59 /* Task */,
+				F5FA483E1D917AFE00837672 /* DataStore.swift */,
+				F5FA48421D917C9A00837672 /* RealmDataStore.swift */,
+				F5FA48441D92AC8200837672 /* Repository.swift */,
+				F5FA48401D917C3F00837672 /* CRUD.swift */,
+			);
+			name = Repo;
+			sourceTree = "<group>";
+		};
+		F5B972B41D92BA4700610E59 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				F5B972B71D92BA9000610E59 /* TaskDataStore.swift */,
+				F5B972B51D92BA5C00610E59 /* TaskRepository.swift */,
+			);
+			name = Task;
 			sourceTree = "<group>";
 		};
 		F5F903351D91695B00B7C238 = {
@@ -130,9 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				F5FA483C1D917A7B00837672 /* Entity */,
-				F5FA483E1D917AFE00837672 /* DataStore.swift */,
-				F5FA48421D917C9A00837672 /* RealmDataStore.swift */,
-				F5FA48401D917C3F00837672 /* CRUD.swift */,
+				F5B972B31D92BA3400610E59 /* Repo */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -163,6 +188,7 @@
 			buildConfigurationList = F5F903501D91695B00B7C238 /* Build configuration list for PBXNativeTarget "Locatodo" */;
 			buildPhases = (
 				E8C4D69DE4085A2D5065E18F /* [CP] Check Pods Manifest.lock */,
+				F5842AE71D92AED30005105A /* R.swift */,
 				F5F9033A1D91695B00B7C238 /* Sources */,
 				F5F9033B1D91695B00B7C238 /* Frameworks */,
 				F5F9033C1D91695B00B7C238 /* Resources */,
@@ -272,6 +298,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		F5842AE71D92AED30005105A /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -287,9 +327,12 @@
 				F5FA482E1D916FFA00837672 /* Convertible.swift in Sources */,
 				F5FA48341D9171BF00837672 /* Task.swift in Sources */,
 				F5FA48361D91780900837672 /* RealmTask.swift in Sources */,
+				F5B972B81D92BA9000610E59 /* TaskDataStore.swift in Sources */,
 				F5FA483F1D917AFE00837672 /* DataStore.swift in Sources */,
+				F5B972B61D92BA5C00610E59 /* TaskRepository.swift in Sources */,
 				F5F903421D91695B00B7C238 /* AppDelegate.swift in Sources */,
 				F5FA48411D917C3F00837672 /* CRUD.swift in Sources */,
+				F5FA48451D92AC8200837672 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +376,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -383,6 +427,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -412,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 407373D6F3361FEBBFF04827 /* Pods-Locatodo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AZ28EH9G9N;
 				INFOPLIST_FILE = Locatodo/Info.plist;
@@ -426,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A05A2D5535642BC74FC6A6A6 /* Pods-Locatodo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AZ28EH9G9N;
 				INFOPLIST_FILE = Locatodo/Info.plist;

@@ -11,7 +11,7 @@ import Foundation
 enum CRUD<ModelType: Model> {
     
     case create([ModelType])
-    case read
+    case read([ModelType])
     case update([ModelType])
     case delete([ModelType])
     
