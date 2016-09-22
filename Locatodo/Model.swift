@@ -69,12 +69,16 @@ extension ModelBuilder where ModelType.ID == String {
     
 }
 
-struct ModelField {
+class ModelField {
     
     static let id: String = "id"
     
     static let createdAt: String = "createdAt"
     
     static let updatedAt: String = "updatedAt"
+    
+    private init() {
+        fatalError("Do not instantiate ModelField!")
+    }
     
 }

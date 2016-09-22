@@ -8,7 +8,7 @@
 
 import RealmSwift
 
-class RealmTask: Object {
+final class RealmTask: Object {
     
     dynamic var id: String = ""
     
@@ -52,7 +52,7 @@ extension RealmTask: Convertible {
 
 extension RealmTask {
     
-    struct Field {
+    class Field: ModelField {
         
         static let title: String = "title"
         
