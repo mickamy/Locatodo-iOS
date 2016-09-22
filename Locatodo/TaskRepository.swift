@@ -9,7 +9,7 @@
 import RxSwift
 
 final class TaskRepository: Repository {
-    
+
     typealias ModelType = Task
     
     typealias DataStoreType = TaskDataStore
@@ -20,6 +20,11 @@ final class TaskRepository: Repository {
     
     let models: BehaviorSubject<[Task]> = BehaviorSubject(value: [])
     
+    let disposeBag: DisposeBag = DisposeBag()
+    
     private init() {
+        findAll()
+            .subscribe(onNext: { values in log.debug("onFindAll!: \(values.count)") })
+            .addDisposableTo(disposeBag)
     }
 }

@@ -10,8 +10,11 @@
 		5A7DDAC06D9658D9A8A74A6A /* Pods_Locatodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B574631B91C45FA7A93AAD8 /* Pods_Locatodo.framework */; };
 		F5B972B61D92BA5C00610E59 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972B51D92BA5C00610E59 /* TaskRepository.swift */; };
 		F5B972B81D92BA9000610E59 /* TaskDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972B71D92BA9000610E59 /* TaskDataStore.swift */; };
+		F5B972BA1D935D9600610E59 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972B91D935D9600610E59 /* TasksViewController.swift */; };
+		F5B972BC1D935ED100610E59 /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972BB1D935ED100610E59 /* TasksViewModel.swift */; };
+		F5B972BE1D9364B300610E59 /* TaskCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972BD1D9364B300610E59 /* TaskCreator.swift */; };
+		F5B972C11D9369A600610E59 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972C01D9369A600610E59 /* R.generated.swift */; };
 		F5F903421D91695B00B7C238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F903411D91695B00B7C238 /* AppDelegate.swift */; };
-		F5F903441D91695B00B7C238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F903431D91695B00B7C238 /* ViewController.swift */; };
 		F5F903471D91695B00B7C238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F903451D91695B00B7C238 /* Main.storyboard */; };
 		F5F903491D91695B00B7C238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5F903481D91695B00B7C238 /* Assets.xcassets */; };
 		F5F9034C1D91695B00B7C238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F9034A1D91695B00B7C238 /* LaunchScreen.storyboard */; };
@@ -33,9 +36,12 @@
 		A05A2D5535642BC74FC6A6A6 /* Pods-Locatodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locatodo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Locatodo/Pods-Locatodo.release.xcconfig"; sourceTree = "<group>"; };
 		F5B972B51D92BA5C00610E59 /* TaskRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		F5B972B71D92BA9000610E59 /* TaskDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDataStore.swift; sourceTree = "<group>"; };
+		F5B972B91D935D9600610E59 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		F5B972BB1D935ED100610E59 /* TasksViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
+		F5B972BD1D9364B300610E59 /* TaskCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreator.swift; sourceTree = "<group>"; };
+		F5B972C01D9369A600610E59 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		F5F9033E1D91695B00B7C238 /* Locatodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locatodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F903411D91695B00B7C238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5F903431D91695B00B7C238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5F903461D91695B00B7C238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5F903481D91695B00B7C238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5F9034B1D91695B00B7C238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,6 +108,14 @@
 			name = Task;
 			sourceTree = "<group>";
 		};
+		F5B972BF1D9364BA00610E59 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				F5B972BD1D9364B300610E59 /* TaskCreator.swift */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
 		F5F903351D91695B00B7C238 = {
 			isa = PBXGroup;
 			children = (
@@ -123,8 +137,11 @@
 		F5F903401D91695B00B7C238 /* Locatodo */ = {
 			isa = PBXGroup;
 			children = (
+				F5B972C01D9369A600610E59 /* R.generated.swift */,
 				F5F903411D91695B00B7C238 /* AppDelegate.swift */,
-				F5F903431D91695B00B7C238 /* ViewController.swift */,
+				F5B972B91D935D9600610E59 /* TasksViewController.swift */,
+				F5B972BB1D935ED100610E59 /* TasksViewModel.swift */,
+				F5B972BF1D9364BA00610E59 /* Debug */,
 				F5FA483B1D917A6800837672 /* Data */,
 				F5FA483D1D917A9600837672 /* Util */,
 				F5F903451D91695B00B7C238 /* Main.storyboard */,
@@ -319,13 +336,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5F903441D91695B00B7C238 /* ViewController.swift in Sources */,
 				F5FA48431D917C9A00837672 /* RealmDataStore.swift in Sources */,
 				F5F903561D916BB500B7C238 /* Identifiable.swift in Sources */,
 				F5F903541D916B5900B7C238 /* Logger.swift in Sources */,
+				F5B972BA1D935D9600610E59 /* TasksViewController.swift in Sources */,
+				F5B972BC1D935ED100610E59 /* TasksViewModel.swift in Sources */,
 				F5FA48321D91712100837672 /* Model.swift in Sources */,
 				F5FA482E1D916FFA00837672 /* Convertible.swift in Sources */,
 				F5FA48341D9171BF00837672 /* Task.swift in Sources */,
+				F5B972C11D9369A600610E59 /* R.generated.swift in Sources */,
 				F5FA48361D91780900837672 /* RealmTask.swift in Sources */,
 				F5B972B81D92BA9000610E59 /* TaskDataStore.swift in Sources */,
 				F5FA483F1D917AFE00837672 /* DataStore.swift in Sources */,
@@ -333,6 +352,7 @@
 				F5F903421D91695B00B7C238 /* AppDelegate.swift in Sources */,
 				F5FA48411D917C3F00837672 /* CRUD.swift in Sources */,
 				F5FA48451D92AC8200837672 /* Repository.swift in Sources */,
+				F5B972BE1D9364B300610E59 /* TaskCreator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

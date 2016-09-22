@@ -16,17 +16,30 @@ protocol Repository: class, DataStore {
     
     var models: BehaviorSubject<[ModelType]> { get }
     
+    var disposeBag: DisposeBag { get }
+    
 }
 
 extension Repository where DataStoreType.ModelType == Self.ModelType {
     
     private func on(event: CRUD<ModelType>) {
+        var value = try! models.value()
+        log.debug("on: \(event) oldValue: \(value.count)")
         switch event {
-        case .create: break
-        case .read: break
-        case .update: break
-        case .delete: break
+        case .create(let created):
+            value.append(contentsOf: created)
+            log.debug("\(created.count) item created!")
+        case .read(let read):
+            log.debug("\(read.count) item read!")
+            return
+        case .update(let updated):
+            value.replace(with: updated)
+            log.debug("\(updated.count) item updated!")
+        case .delete(let deleted):
+            value.remove(ids: deleted.map { $0.id })
+            log.debug("\(deleted.count) item deleted!")
         }
+        models.onNext(value)
     }
     
     func create(_ models: [Self.ModelType]) -> Observable<Void> {
@@ -50,6 +63,8 @@ extension Repository where DataStoreType.ModelType == Self.ModelType {
             .findAll()
             .do(onNext: { [weak self] result in
                 self?.on(event: .read(result))
+                self?.models.onNext(result)
+                log.debug("READALLLLLLLLLLL")
             })
     }
     
