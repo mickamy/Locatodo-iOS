@@ -6,9 +6,8 @@ target 'Locatodo' do
   use_frameworks!
 
   # Pods for Locatodo
-  pod 'Realm', git: 'https://github.com/realm/realm-cocoa.git', submodules: true
-  pod 'RealmSwift', git: 'https://github.com/realm/realm-cocoa.git', submodules: true
-  pod 'XCGLogger', git: 'https://github.com/DaveWoodCom/XCGLogger', submodules: true, branch: 'swift_3.0'
+  pod 'RealmSwift'
+  pod 'XCGLogger', '~> 4.0.0'
   pod 'RxSwift', '~> 3.0.0-beta.1'
   pod 'RxCocoa', '~> 3.0.0-beta.1'
   pod 'R.swift', '~> 3.0.0'
