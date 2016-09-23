@@ -27,7 +27,7 @@ extension RealmDataSource
             let realm = try! Realm()
             do {
                 try realm.write {
-                    realm.add(weakself.realmObjects(from: models))
+                    realm.add(models.map { RealmObject(from: $0) })
                 }
             } catch(let e) {
                 log.error(e)
@@ -69,7 +69,7 @@ extension RealmDataSource
             guard let weakself = self else {
                 return Disposables.create()
             }
-            let updated = weakself.realmObjects(from: models)
+            let updated = models.map { RealmObject(from: $0) }
             let realm = try! Realm()
             do {
                 try realm.write {
@@ -102,16 +102,6 @@ extension RealmDataSource
             observer.onCompleted()
             return weakself.disposable
         }
-    }
-    
-    private func realmObjects(from models: [Self.ModelType]) -> [Self.RealmObject] {
-        var objects = [RealmObject]()
-        for model in models {
-            let object = RealmObject()
-            object.copy(from: model)
-            objects.append(object)
-        }
-        return objects
     }
     
     private func find(_ realm: Realm, by ids: [Self.ModelType.ID]) -> Results<Self.RealmObject> {

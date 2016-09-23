@@ -6,7 +6,7 @@
 //  Copyright © 2016 Tetsuro Mikami. All rights reserved.
 //
 
-import Foundation
+import RealmSwift
 
 protocol Convertible {
     
@@ -15,6 +15,15 @@ protocol Convertible {
     func convert() -> ConvertType
     
     func copy(from original: ConvertType)
+
+}
+
+extension Convertible where Self: Object {
+    
+    init(from original: ConvertType) {
+        self.init()
+        copy(from: original)
+    }
     
 }
 
