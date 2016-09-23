@@ -10,6 +10,11 @@
 		5A7DDAC06D9658D9A8A74A6A /* Pods_Locatodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B574631B91C45FA7A93AAD8 /* Pods_Locatodo.framework */; };
 		AD5719BA1D94EF9C005AC462 /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5719B91D94EF9C005AC462 /* ModelError.swift */; };
 		AD5719BC1D94F030005AC462 /* TaskModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5719BB1D94F030005AC462 /* TaskModelError.swift */; };
+		ADE7804C1D9514E90004CEB1 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE7804B1D9514E90004CEB1 /* Coordinate.swift */; };
+		ADE7804E1D9515250004CEB1 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE7804D1D9515250004CEB1 /* Place.swift */; };
+		ADE780541D951F720004CEB1 /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE780531D951F720004CEB1 /* GeolocationService.swift */; };
+		ADE780561D951FE30004CEB1 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE780551D951FE30004CEB1 /* CLLocationManager+Rx.swift */; };
+		ADE780581D9520C40004CEB1 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE780571D9520C40004CEB1 /* RxCLLocationManagerDelegateProxy.swift */; };
 		F5B972B61D92BA5C00610E59 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972B51D92BA5C00610E59 /* TaskRepository.swift */; };
 		F5B972B81D92BA9000610E59 /* TaskDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972B71D92BA9000610E59 /* TaskDataStore.swift */; };
 		F5B972BA1D935D9600610E59 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972B91D935D9600610E59 /* TasksViewController.swift */; };
@@ -38,6 +43,11 @@
 		A05A2D5535642BC74FC6A6A6 /* Pods-Locatodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locatodo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Locatodo/Pods-Locatodo.release.xcconfig"; sourceTree = "<group>"; };
 		AD5719B91D94EF9C005AC462 /* ModelError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelError.swift; sourceTree = "<group>"; };
 		AD5719BB1D94F030005AC462 /* TaskModelError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModelError.swift; sourceTree = "<group>"; };
+		ADE7804B1D9514E90004CEB1 /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		ADE7804D1D9515250004CEB1 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		ADE780531D951F720004CEB1 /* GeolocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
+		ADE780551D951FE30004CEB1 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		ADE780571D9520C40004CEB1 /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
 		F5B972B51D92BA5C00610E59 /* TaskRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		F5B972B71D92BA9000610E59 /* TaskDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDataStore.swift; sourceTree = "<group>"; };
 		F5B972B91D935D9600610E59 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +91,33 @@
 				A05A2D5535642BC74FC6A6A6 /* Pods-Locatodo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		ADE7804F1D9517D00004CEB1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ADE780501D9517DA0004CEB1 /* Tasks */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		ADE780501D9517DA0004CEB1 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				F5B972B91D935D9600610E59 /* TasksViewController.swift */,
+				F5B972BB1D935ED100610E59 /* TasksViewModel.swift */,
+			);
+			name = Tasks;
+			sourceTree = "<group>";
+		};
+		ADE780591D9522220004CEB1 /* RxExtension */ = {
+			isa = PBXGroup;
+			children = (
+				ADE780571D9520C40004CEB1 /* RxCLLocationManagerDelegateProxy.swift */,
+				ADE780551D951FE30004CEB1 /* CLLocationManager+Rx.swift */,
+				ADE780531D951F720004CEB1 /* GeolocationService.swift */,
+			);
+			name = RxExtension;
 			sourceTree = "<group>";
 		};
 		F2DEE1AFAD64D03EA41CAA99 /* Frameworks */ = {
@@ -145,8 +182,8 @@
 			children = (
 				F5B972C01D9369A600610E59 /* R.generated.swift */,
 				F5F903411D91695B00B7C238 /* AppDelegate.swift */,
-				F5B972B91D935D9600610E59 /* TasksViewController.swift */,
-				F5B972BB1D935ED100610E59 /* TasksViewModel.swift */,
+				ADE780591D9522220004CEB1 /* RxExtension */,
+				ADE7804F1D9517D00004CEB1 /* UI */,
 				F5B972BF1D9364BA00610E59 /* Debug */,
 				F5FA483B1D917A6800837672 /* Data */,
 				F5FA483D1D917A9600837672 /* Util */,
@@ -189,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				F5FA48331D9171BF00837672 /* Task.swift */,
+				ADE7804B1D9514E90004CEB1 /* Coordinate.swift */,
+				ADE7804D1D9515250004CEB1 /* Place.swift */,
 				F5FA48391D917A2600837672 /* Type */,
 				F5FA483A1D917A3E00837672 /* RealmObject */,
 			);
@@ -346,6 +385,7 @@
 				F5F903561D916BB500B7C238 /* Identifiable.swift in Sources */,
 				AD5719BA1D94EF9C005AC462 /* ModelError.swift in Sources */,
 				F5F903541D916B5900B7C238 /* Logger.swift in Sources */,
+				ADE780541D951F720004CEB1 /* GeolocationService.swift in Sources */,
 				F5B972BA1D935D9600610E59 /* TasksViewController.swift in Sources */,
 				F5B972BC1D935ED100610E59 /* TasksViewModel.swift in Sources */,
 				F5FA48321D91712100837672 /* Model.swift in Sources */,
@@ -354,13 +394,17 @@
 				F5FA48341D9171BF00837672 /* Task.swift in Sources */,
 				F5B972C11D9369A600610E59 /* R.generated.swift in Sources */,
 				F5FA48361D91780900837672 /* RealmTask.swift in Sources */,
+				ADE7804E1D9515250004CEB1 /* Place.swift in Sources */,
 				F5B972B81D92BA9000610E59 /* TaskDataStore.swift in Sources */,
 				F5FA483F1D917AFE00837672 /* DataStore.swift in Sources */,
+				ADE780561D951FE30004CEB1 /* CLLocationManager+Rx.swift in Sources */,
 				F5B972B61D92BA5C00610E59 /* TaskRepository.swift in Sources */,
 				F5F903421D91695B00B7C238 /* AppDelegate.swift in Sources */,
+				ADE780581D9520C40004CEB1 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				F5FA48411D917C3F00837672 /* CRUD.swift in Sources */,
 				F5FA48451D92AC8200837672 /* Repository.swift in Sources */,
 				F5B972BE1D9364B300610E59 /* TaskCreator.swift in Sources */,
+				ADE7804C1D9514E90004CEB1 /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

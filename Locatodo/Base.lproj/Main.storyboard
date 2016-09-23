@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2PY-PX-Lz3" id="0ir-Fn-Zlg">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -41,6 +41,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bXb-yX-UBz">
+                        <barButtonItem key="leftBarButtonItem" title="Map" id="mHc-r4-bG3">
+                            <connections>
+                                <action selector="pickPlace:" destination="BYZ-38-t0r" id="R1t-pq-eD2"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="jAh-MF-dNS">
                             <connections>
                                 <action selector="add:" destination="BYZ-38-t0r" id="h2x-KP-Uem"/>
@@ -60,7 +65,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xwa-Df-XtN" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z9X-Ae-ZBg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Z9X-Ae-ZBg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

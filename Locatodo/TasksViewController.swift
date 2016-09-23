@@ -49,6 +49,11 @@ final class TasksViewController: UIViewController {
         createDummy()
     }
     
+    @IBAction func pickPlace(_ sender: AnyObject) {
+        
+    }
+    
+    
     private func createDummy() {
         let dummy = TaskCreator.dummy(size: 10)
         TaskRepository
