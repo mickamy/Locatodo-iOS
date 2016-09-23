@@ -15,18 +15,36 @@ final class TasksViewModel {
     
     private let bag: DisposeBag = DisposeBag()
     
-    private let tasksVariable: Variable<[Task]> = Variable<[Task]>([])
+    private let tasksVariable: Variable<[Task]> = Variable([])
+    
+    private let errorVariable: Variable<TaskModelError?> = Variable(nil)
     
     public let tasks: Observable<[Task]>
     
+    public let error: Observable<TaskModelError?>
+    
     init(_ repository: TaskRepository) {
         self.repository = repository
-//        self.tasksVariable =
+        
         self.repository
             .models
+            .shareReplay(1)
             .bindTo(tasksVariable)
             .addDisposableTo(bag)
-        self.tasks = tasksVariable.asObservable()
+        
+        self.repository
+            .error
+            .shareReplay(1)
+            .bindTo(errorVariable)
+            .addDisposableTo(bag)
+        
+        self.tasks = tasksVariable
+            .asObservable()
+            .shareReplay(1)
+        
+        self.error = errorVariable
+            .asObservable()
+            .shareReplay(1)
     }
     
 }

@@ -30,6 +30,19 @@ final class TasksViewController: UIViewController {
             .bindTo(taskTable.rx.items(cellIdentifier: cellID)) { (row, task, cell) in
                 cell.textLabel?.text = task.id
             }.addDisposableTo(bag)
+        
+        viewModel
+            .error
+            .subscribe { on in
+                switch on {
+                case .next(let e):
+                    log.error(e)
+                case .error(let e):
+                    log.error(e)
+                case .completed:
+                    log.debug("completed error!")
+                }
+            }.addDisposableTo(bag)
     }
     
     @IBAction func add(_ sender: AnyObject) {

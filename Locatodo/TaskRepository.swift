@@ -14,17 +14,23 @@ final class TaskRepository: Repository {
     
     typealias DataStoreType = TaskDataStore
     
+    typealias ModelErrorType = TaskModelError
+    
     static let instance = TaskRepository()
     
     let dataStore: TaskDataStore = TaskDataStore.instance
     
     let models: BehaviorSubject<[Task]> = BehaviorSubject(value: [])
     
+    let error: BehaviorSubject<TaskModelError?> = BehaviorSubject(value: nil)
+    
     let disposeBag: DisposeBag = DisposeBag()
     
     private init() {
         findAll()
-            .subscribe(onNext: { values in log.debug("onFindAll!: \(values.count)") })
+            .subscribe(
+                onNext: { [weak self] values in
+                    self?.models.onNext(values) })
             .addDisposableTo(disposeBag)
     }
 }

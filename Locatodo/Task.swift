@@ -16,30 +16,20 @@ struct Task: Model {
     
     let title: String
     
-    let completed: Bool
+    var completed: Bool
     
     let createdAt: TimeInterval
     
     var updatedAt: TimeInterval
     
-    func complete() -> Task {
-        return Task(
-            id: id,
-            title: title,
-            completed: true,
-            createdAt: createdAt,
-            updatedAt: currentTime()
-        )
+    mutating func complete() {
+        completed = true
+        updatedAt = currentTime()
     }
     
-    func activate() -> Task {
-        return Task(
-            id: id,
-            title: title,
-            completed: false,
-            createdAt: createdAt,
-            updatedAt: currentTime()
-        )
+    mutating func activate() {
+        completed = false
+        updatedAt = currentTime()
     }
     
 }

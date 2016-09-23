@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5A7DDAC06D9658D9A8A74A6A /* Pods_Locatodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B574631B91C45FA7A93AAD8 /* Pods_Locatodo.framework */; };
+		AD5719BA1D94EF9C005AC462 /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5719B91D94EF9C005AC462 /* ModelError.swift */; };
+		AD5719BC1D94F030005AC462 /* TaskModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5719BB1D94F030005AC462 /* TaskModelError.swift */; };
 		F5B972B61D92BA5C00610E59 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972B51D92BA5C00610E59 /* TaskRepository.swift */; };
 		F5B972B81D92BA9000610E59 /* TaskDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972B71D92BA9000610E59 /* TaskDataStore.swift */; };
 		F5B972BA1D935D9600610E59 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B972B91D935D9600610E59 /* TasksViewController.swift */; };
@@ -34,6 +36,8 @@
 		407373D6F3361FEBBFF04827 /* Pods-Locatodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locatodo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Locatodo/Pods-Locatodo.debug.xcconfig"; sourceTree = "<group>"; };
 		7B574631B91C45FA7A93AAD8 /* Pods_Locatodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Locatodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05A2D5535642BC74FC6A6A6 /* Pods-Locatodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locatodo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Locatodo/Pods-Locatodo.release.xcconfig"; sourceTree = "<group>"; };
+		AD5719B91D94EF9C005AC462 /* ModelError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelError.swift; sourceTree = "<group>"; };
+		AD5719BB1D94F030005AC462 /* TaskModelError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModelError.swift; sourceTree = "<group>"; };
 		F5B972B51D92BA5C00610E59 /* TaskRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		F5B972B71D92BA9000610E59 /* TaskDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDataStore.swift; sourceTree = "<group>"; };
 		F5B972B91D935D9600610E59 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 				F5FA48421D917C9A00837672 /* RealmDataStore.swift */,
 				F5FA48441D92AC8200837672 /* Repository.swift */,
 				F5FA48401D917C3F00837672 /* CRUD.swift */,
+				AD5719B91D94EF9C005AC462 /* ModelError.swift */,
 			);
 			name = Repo;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			children = (
 				F5B972B71D92BA9000610E59 /* TaskDataStore.swift */,
 				F5B972B51D92BA5C00610E59 /* TaskRepository.swift */,
+				AD5719BB1D94F030005AC462 /* TaskModelError.swift */,
 			);
 			name = Task;
 			sourceTree = "<group>";
@@ -338,11 +344,13 @@
 			files = (
 				F5FA48431D917C9A00837672 /* RealmDataStore.swift in Sources */,
 				F5F903561D916BB500B7C238 /* Identifiable.swift in Sources */,
+				AD5719BA1D94EF9C005AC462 /* ModelError.swift in Sources */,
 				F5F903541D916B5900B7C238 /* Logger.swift in Sources */,
 				F5B972BA1D935D9600610E59 /* TasksViewController.swift in Sources */,
 				F5B972BC1D935ED100610E59 /* TasksViewModel.swift in Sources */,
 				F5FA48321D91712100837672 /* Model.swift in Sources */,
 				F5FA482E1D916FFA00837672 /* Convertible.swift in Sources */,
+				AD5719BC1D94F030005AC462 /* TaskModelError.swift in Sources */,
 				F5FA48341D9171BF00837672 /* Task.swift in Sources */,
 				F5B972C11D9369A600610E59 /* R.generated.swift in Sources */,
 				F5FA48361D91780900837672 /* RealmTask.swift in Sources */,
