@@ -11,6 +11,7 @@ target 'Locatodo' do
   pod 'RxSwift', '~> 3.0.0-beta.1'
   pod 'RxCocoa', '~> 3.0.0-beta.1'
   pod 'R.swift', '~> 3.0.0'
+  pod 'GoogleMaps'
 end
 
 post_install do |installer|
