@@ -11,8 +11,6 @@ import RxCocoa
 
 final class TasksViewModel {
     
-    private let repository: TaskRepository
-    
     private let bag: DisposeBag = DisposeBag()
     
     private let tasksVariable: Variable<[Task]> = Variable([])
@@ -23,16 +21,14 @@ final class TasksViewModel {
     
     public let error: Observable<TaskModelError?>
     
-    init(_ repository: TaskRepository) {
-        self.repository = repository
-        
-        self.repository
+    init() {
+        TaskRepository.instance
             .models
             .shareReplay(1)
             .bindTo(tasksVariable)
             .addDisposableTo(bag)
         
-        self.repository
+        TaskRepository.instance
             .error
             .shareReplay(1)
             .bindTo(errorVariable)
@@ -45,6 +41,21 @@ final class TasksViewModel {
         self.error = errorVariable
             .asObservable()
             .shareReplay(1)
+    }
+    
+    public func create(tasks: [Task]) {
+        TaskRepository.instance
+            .create(tasks)
+            .subscribe { event in
+                switch event {
+                case .next(_):
+                    log.debug("next created : \(tasks.count) items")
+                case .error(let e):
+                    log.error("error on create: \(e.localizedDescription)")
+                case .completed:
+                    log.debug("completed")
+                }
+            }.addDisposableTo(bag)
     }
     
 }

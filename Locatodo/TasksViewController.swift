@@ -11,7 +11,7 @@ import RxSwift
 
 final class TasksViewController: UIViewController {
     
-    private let viewModel: TasksViewModel = TasksViewModel(TaskRepository.instance)
+    private let viewModel: TasksViewModel = TasksViewModel()
     
     private let bag: DisposeBag = DisposeBag()
     
